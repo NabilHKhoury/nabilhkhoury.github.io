@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background-color: #f8f8f8;
+    display: flex;
+}
+
+h1, h2, h3 {
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 200px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-btn {
+    width: 80%;
+    margin: 15px 0;
+    padding: 8px 0;
+    font-size: 0.9em;
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #ffffff;
+}
+
+/* Content Styles */
+.content {
+    margin-left: 220px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+header {
+    padding: 40px 0 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+main {
+    padding-top: 20px;
+}
+
+.section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.item {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    margin-bottom: 20px;
+}
+
+.org-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+/* Specific class for black background */
+.black-background {
+    background-color: #000;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.item h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.5em;
+}
+
+.item p {
+    margin: 5px 0;
+}
+
+.item ul {
+    padding-left: 20px;
+}
+
+.item ul li {
+    margin: 5px 0;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+footer p {
+    margin: 0;
+}
+
