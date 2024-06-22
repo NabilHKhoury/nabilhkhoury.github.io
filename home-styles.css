@@ -5,11 +5,15 @@ body {
     padding: 0;
     color: #333;
     background-color: #f8f8f8;
+    text-align: center;
+}
+
+.container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    text-align: center;
 }
 
 .container h1 {
@@ -21,6 +25,14 @@ body {
 .container p {
     font-size: 1.2em;
     margin: 10px 0;
+}
+
+.container p em {
+    font-style: italic;
+    font-weight: bold;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .btn {
@@ -38,4 +50,26 @@ body {
 .btn:hover {
     background: linear-gradient(45deg, #6a11cb, #2575fc);
     color: #ffffff;
+}
+
+/* About Me Section */
+.about-me-section {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #ffffff;
+    padding: 60px 20px;
+}
+
+.about-me-section h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.about-me-section p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
 }
