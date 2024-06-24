@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+/* Navigation Styles */
+header {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.top-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #333;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    min-height: calc(100vh - 80px); /* Adjust for header height */
+}
+
+.container h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* About Content Styles */
+.about-content {
+    max-width: 800px;
+    text-align: left;
+}
+
+.about-content p {
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.about-content a {
+    color: #6a11cb;
+    text-decoration: none;
+    border-bottom: 1px solid #6a11cb;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.about-content a:hover {
+    color: #2575fc;
+    border-color: #2575fc;
+}
+
+/* Top Right Icons */
+.top-right-icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.top-right-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.top-right-icons a img {
+    width: 30px;
+    height: 30px;
+    filter: grayscale(100%); /* Initial black and white */
+    transition: filter 0.3s ease;
+}
+
+.top-right-icons .icon-linkedin:hover img,
+.top-right-icons .icon-email:hover img {
+    filter: none; /* Show original colors on hover */
+}
+
+.top-right-icons a:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}

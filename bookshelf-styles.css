@@ -1,0 +1,75 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.container p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+
+.bookshelf {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.bookshelf img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.bookshelf img:hover {
+    transform: scale(1.05);
+}
+
+/* Buttons at the top */
+.top-right-icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.top-right-icons .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    transition: background 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.top-right-icons .btn:hover {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #ffffff;
+    text-decoration: none;
+}
