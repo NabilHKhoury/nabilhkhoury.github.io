@@ -59,6 +59,38 @@ a:hover {
     color: #ffffff;
 }
 
+/* Contact Button Styles */
+.contact-btn {
+    width: 80%;
+    margin: 15px 0;
+    padding: 8px 0;
+    font-size: 0.9em;
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.contact-btn img.contact-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.contact-btn:hover {
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    color: #ffffff;
+}
+
+.contact-btn:hover img.contact-icon {
+    filter: none; /* Prevents filter effects on hover */
+}
+
 /* Content Styles */
 .content {
     margin-left: 220px;
