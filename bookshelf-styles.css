@@ -30,10 +30,11 @@ body {
 
 .bookshelf {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
     gap: 20px;
     width: 100%;
     max-width: 1200px;
+    margin: 0 auto; /* Center the grid */
 }
 
 .bookshelf img {
