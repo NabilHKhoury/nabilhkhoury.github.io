@@ -56,12 +56,13 @@ body {
 
 /* About Section */
 .about-section {
-    background-color: #eef6fc;
+    background: linear-gradient(45deg, #6a11cb, #2575fc);
     padding: 40px 20px;
     text-align: left;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white; /* Make text white */
 }
 
 .about-content {
@@ -81,10 +82,11 @@ body {
 .about-text h1 {
     font-size: 3em;
     font-weight: bold;
+    color: white; /* Make text white */
 }
 
 .about-text .highlight {
-    background: linear-gradient(45deg, #6a11cb, #2575fc);
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -92,10 +94,21 @@ body {
 .about-text p {
     font-size: 1.2em;
     margin: 20px 0;
+    color: white; /* Make text white */
 }
 
 .about-text .btn {
     margin-top: 20px;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.about-text .btn:hover {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    color: #ffffff; /* Keep text white on hover */
+    border-color: transparent;
 }
 
 .about-image {
