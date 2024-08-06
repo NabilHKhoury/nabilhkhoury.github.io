@@ -1,144 +1,129 @@
-/* General Styles */
-body {
-    font-family: 'Montserrat', sans-serif;
+body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
-    color: #000;
-    background-color: #f8f8f8;
+    font-family: 'Montserrat', sans-serif;
+    color: #000; /* Default text color set to dark black */
+}
+
+body {
     display: flex;
+    background-color: #f8f8f8; /* Off-white background for the entire page */
+    color: #333;
 }
 
-h1, h2, h3 {
-    color: #000;
-}
-
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Sidebar Styles */
 .sidebar {
     width: 200px;
-    background-color: #ffffff;
+    background-color: #f8f8f8; /* Sidebar matches the body background */
     padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 100vh;
     position: fixed;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.navbar {
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-}
-
-.nav-btn {
-    width: 80%;
-    margin: 15px 0;
-    padding: 8px 0;
-    font-size: 0.9em;
-    color: #000000;
-    background-color: #ffffff;
-    border: 2px solid #000000;
-    border-radius: 5px;
-    text-align: center;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-.nav-btn:hover {
-    background: linear-gradient(45deg, #6a11cb, #2575fc);
-    color: #ffffff;
-}
-
-/* Contact Button Styles */
-.contact-btn {
-    width: 80%;
-    margin: 15px 0;
-    padding: 8px 0;
-    font-size: 0.9em;
-    color: #000000;
-    background-color: #ffffff;
-    border: 2px solid #000000;
-    border-radius: 5px;
-    text-align: center;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    transition: background 0.3s ease, color 0.3s ease;
 }
 
-.contact-btn img.contact-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.contact-btn:hover {
-    background: linear-gradient(45deg, #6a11cb, #2575fc);
-    color: #ffffff;
-}
-
-.contact-btn:hover img.contact-icon {
-    filter: none; /* Prevents filter effects on hover */
-}
-
-/* Content Styles */
-.content {
-    margin-left: 220px;
-    padding: 20px;
-    flex-grow: 1;
-}
-
-header {
-    padding: 40px 0 20px 0;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
-    font-weight: bold;
-}
-
-header p {
-    margin: 10px 0;
-    font-size: 1.2em;
-}
-
-.contact-info {
-    margin-top: 10px;
-}
-
-.contact-info p {
+.nav-btn, .contact-btn {
+    background: none;
+    border: none;
+    padding: 10px;
     margin: 5px 0;
+    text-align: center;
+    color: #888; /* Navbar text softer */
+    font-size: 0.9em;
+    width: 100%;
+    transition: color 0.3s, font-size 0.3s;
 }
 
-main {
-    padding-top: 20px;
+.nav-btn:hover, .contact-btn:hover {
+    color: #555; /* Darker on hover but not black */
+    font-size: 1em;
 }
 
-.section {
-    background-color: #ffffff;
+.content {
+    flex-grow: 1;
+    margin-left: 220px; /* Offset for sidebar */
     padding: 20px;
-    margin-top: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #f8f8f8; /* Content area also uses off-white */
 }
 
-.section h2 {
-    margin-top: 0;
-    font-size: 2em;
+..section {
+    margin-bottom: 40px; /* Space between sections */
+}
+
+.org-logo {
+    width: 50px;
+    height: 50px;
+    float: left; /* Aligns logo to the left of the text */
+    margin-right: 20px; /* Space between logo and text */
 }
 
 .item {
-    display: block; /* Make items display as block to stack them vertically */
+    overflow: hidden; /* Clears the float */
+    margin-bottom: 30px; /* Space between items */
+    padding: 10px 0; /* Vertical padding for items */
+}
+
+.item h3 {
+    margin: 0 0 5px 0; /* Space below job title */
+    font-size: 1.2em;
+    color: #333;
+}
+
+.item em {
+    display: block; /* Ensures company name is on its own line */
+    font-size: 1.1em;
+    color: #666;
+    font-style: italic; /* Italicizes the company name */
+    margin-bottom: 5px; /* Space below the company name */
+}
+
+.item p {
+    margin: 0;
+    line-height: 1.6; /* Improved readability */
+    text-align: justify; /* Justifies text for a clean appearance */
+}
+
+
+.org-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: flex-start; /* Keeps logo aligned with the start of the text */
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f8f8f8;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.item p {
+    margin-bottom: 10px;
+    line-height: 1.6; /* Improving line spacing for better readability */
+    color: #333; /* Ensuring text color is suitable for reading */
+}
+
+.item {
+    display: flex;
+    align-items: flex-start; /* Keeps logo aligned with the start of the text */
     margin-bottom: 20px;
 }
 
@@ -147,87 +132,18 @@ main {
     height: 50px;
     margin-right: 20px;
 }
-
-.item h3 {
-    margin: 0 0 5px 0;
-    font-size: 1.5em;
+.skills-list {
+    padding: 20px 0;
 }
 
-.item p {
-    margin: 5px 0;
+.skills-list h3 {
+    color: #333;
+    margin-top: 20px; /* Adds space above each skill category heading */
 }
 
-.item ul {
-    padding-left: 20px;
-}
-
-.item ul li {
-    margin: 5px 0;
-}
-
-/* Company and Leadership Description Styles */
-.company-description {
-    font-style: italic;
-    margin-bottom: 10px;
-}
-
-.leadership-description {
-    font-style: italic;
-    margin-bottom: 10px;
-}
-
-/* Link Styles */
-.link {
-    color: #6a11cb;
-    text-decoration: underline;
-    cursor: pointer;
-}
-
-.link:hover {
-    color: #2575fc;
-}
-
-/* Footer Styles */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #ffffff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Skills and Courses Container */
-.skills-container, .courses-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.skill-category, .course-category {
-    flex: 1 1 calc(33.333% - 20px);
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-.skill-category h3, .course-category h3 {
-    margin-top: 0;
-}
-
-.skill-category ul, .course-category ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.skill-category ul li, .course-category ul li {
-    margin: 5px 0;
+.skills-list p {
+    color: #555;
+    line-height: 1.5; /* Increases line spacing for better readability */
+    margin-bottom: 10px; /* Space after each category for separation */
+    text-align: justify; /* Justifies the text to align it neatly */
 }
